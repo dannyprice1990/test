@@ -1,0 +1,80 @@
+[{
+		"name": "First item",
+		"columns": [{
+			"weight": 12,
+			"modules": [{
+					"type": "title",
+					"text": "How am I supposed to fight?"
+				},
+				{
+					"type": "paragraph",
+					"text": "Look, I can take you as far as Anchorhead. You can get a transport there to Mos Eisley or wherever you're going."
+				}
+			]
+		}]
+	},
+	{
+		"name": "Second item",
+		"colStackOnMobile": false,
+		"columns": [{
+				"weight": 6,
+				"modules": [{
+						"type": "title",
+						"text": "You're going to do his laundry?"
+					},
+					{
+						"type": "paragraph",
+						"text": "Oh Leela! You're the only person I could turn to; you're the only person who ever loved me."
+					}
+				]
+			},
+			{
+				"weight": 6,
+				"modules": [{
+						"type": "title",
+						"text": "Well how'd you become king then?"
+					},
+					{
+						"type": "paragraph",
+						"text": "The Lady of the Lake, her arm clad in the purest shimmering samite held aloft Excalibur from the bosom of the water, signifying by divine providence that I, Arthur, was to carry Excalibur. THAT is why I am your king."
+					},
+					{
+						"type": "paragraph",
+						"text": "Listen, strange women lyin' in ponds distributin' swords is no basis for a system of government. Supreme executive power derives from a mandate from the masses, not from some farcical aquatic ceremony."
+					}
+				]
+			}
+		]
+	},
+	{
+		"background-image": "https://yourdomain/yourpath/background.png",
+		"background-repeat": "repeat",
+		"background-position": "top center",
+		"background-color": "#fff",
+		"name": "Text on background pattern",
+		"columns": [{
+			"weight": 12,
+			"modules": [{
+				"type": "paragraph",
+				"text": "Behind the word mountains, far from the countries Vokalia and Consonantia."
+			}]
+		}]
+	},
+	{
+		"name": "Developer joke",
+		"display-condition": {
+			"type": "Jokes",
+			"label": "developers",
+			"description": "Only developers will see this content",
+			"before": "{% if recipient.role == 'Developer' %}",
+			"after": "{% endif %}"
+		},
+		"columns": [{
+			"weight": 12,
+			"modules": [{
+				"type": "paragraph",
+				"text": "Chuck Norris writes code that optimizes itself"
+			}]
+		}]
+	}
+]
